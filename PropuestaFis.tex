@@ -8,8 +8,6 @@
 \usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
 \usepackage{braket}
 \usepackage{datenumber}
-%\newdate{date}{10}{05}{2013}
-%\date{\displaydate{date}}
 
 \begin{document}
 
@@ -26,7 +24,8 @@ C\'od. 201113272
 
 \vspace{2mm}
 \Large
-Director: Juan Manuel Pedraza
+Director: Juan Manuel Pedraza\\
+Codirector: Alejandro Reyes Mu\~noz
 
 \normalsize
 \vspace{2mm}
@@ -38,41 +37,37 @@ Director: Juan Manuel Pedraza
 \normalsize
 \section{Introducción}
 
-%Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
-
-La forma en que los genes se interconectan e interactúan entre sí es estudiada por el campo de la biolog\'ia de sistemas por medio de representaciones de circuitos electr\'onicos. \'Estos generalmente presentan \emph{feedbacks}, los cuales confieren ciertos estados diferenciables seg\'un cómo sea su configuraci\'on. Por ejemplo, se sabe que la presencia de \emph{feedbacks} positivos puede ser un indicador de un sistema multiestable \cite{Avendano}. En el caso del sistema que degrada galactosa (GAL) de la levadura \emph{Saccharomyces cerevisiae}, en el cual existen 2 estados diferentes, las propiedades din\'amicas de los \emph{feedbacks} les permite optimizar su \emph{fitness} para un medio ambiente dado. Experimentalmente se ha observado que, en un medio ambiente que cambie con una frecuencia alta, el sistema GAL presenta una tasa elevada de transiciones entre sus 2 estados posibles, mientras que si la frecuencia de cambio es baja, la tasa de transiciones es poca \cite{Murat}. Adem\'as, la tasa de estas transiciones est\'an determinadas por la fuerza de los \emph{feedbacks} \cite{Avendano}. Esta fuerza de los \emph{feedbacks} puede ser entendida por medio de paisajes de energ\'ia \cite{Acar}, los cuales permiten relacionar los diferentes estados posibles con pozos de potencial y las transiciones con cambios estoc\'asticos facilitados por la altura de la barrera de potencial. Este proyecto de grado busca entonces cuantificar c\'omo evoluciona el sistema GAL a un medio ambiente que varie sus condiciones con una cierta frecuencia, analizando la fuerza de los \emph{feedbacks} y comparando el \emph{fitness} de las diferentes cepas. La importancia de estudios como estos radica en que se puede aplicar a cualquier sistema natural para explicar procesos evolutivos. Adem\'as, se pueden usar para el diseño y evoluci\'on dirigida de circuitos artificiales.  
+La forma en que los genes se interconectan e interact\'uan entre s\'i es estudiada por el campo de la biolog\'ia de sistemas por medio de representaciones de circuitos electr\'onicos. \'Estos generalmente presentan \emph{feedbacks}, los cuales confieren ciertos estados diferenciables seg\'un c\'omo sea su configuraci\'on. Por ejemplo, se sabe que la presencia de \emph{feedbacks} positivos puede ser un indicador de un sistema multiestable \cite{Avendano}. Para el caso del sistema que degrada galactosa (GAL) de la levadura \emph{Saccharomyces cerevisiae}, en el cual existen 2 estados diferenciables y 2 estados de transici\'on, las propiedades din\'amicas de los \emph{feedbacks} les permiten a las levaduras optimizar su \emph{fitness} para un medio ambiente dado. Seg\'un resultados te\'oricos y experimentales \cite{Avendano, Murat, Kusell}, se espera que, en un medio ambiente que cambie con una frecuencia alta, el sistema GAL presente una tasa elevada de transiciones entre sus 2 estados posibles. Por el contrario, si la frecuencia de cambio es baja, la tasa de transiciones es poca \cite{Murat}. Por otro lado, la tasa de estas transiciones est\'an determinadas por la fuerza de los \emph{feedbacks} \cite{Avendano}. Esto puede ser entendido por medio de paisajes de energ\'ia \cite{Acar}, los cuales permiten relacionar los diferentes estados posibles con pozos de potencial y las transiciones con cambios estoc\'asticos determinados por la altura de la barrera de potencial. Este proyecto de grado busca entonces cuantificar c\'omo evoluciona el sistema GAL a un medio ambiente que var\'ie sus condiciones con una frecuencia determinada, analizando la fuerza de los \emph{feedbacks} y comparando el \emph{fitness} de las diferentes cepas. La importancia de estudios como estos radica en que se puede aplicar a cualquier sistema natural para explicar procesos evolutivos. Adem\'as, se pueden usar para el dise\~no y evoluci\'on dirigida de circuitos artificiales.  
 
 
 \section{Objetivo General}
-
-%Objetivo general del trabajo. Empieza con un verbo en infinitivo.
 
 Cuantificar de manera experimental y por medio de simulaciones, la respuesta del sistema GAL de \emph{S. cerevisiae} a la adaptaci\'on a un medio ambiente oscilatorio. 
 
 
 \section{Objetivos Específicos}
 
-%Objetivos específicos del trabajo. Empiezan con un verbo en infinitivo.
-
 \begin{itemize}
-	\item Hacer experimentos de competencia entre cepas adaptadas a cierta frecuencia de cambio contra cepas \emph{wild type}, para determinar el \emph{fitness} relativo entre estas
-	\item Determinar las concentraciones de galactosa d\'onde se presentan los diferentes estados posibles para cada una de las cepas del experimento.
+	\item Hacer experimentos de competencia entre cepas adaptadas a cierta frecuencia de cambio y cepas \emph{wild type}, para determinar el \emph{fitness} relativo entre \'estas
+	\item Determinar las concentraciones de galactosa donde se presentan los diferentes estados posibles para cada una de las cepas del experimento.
 	\item Aplicar el concepto de paisajes de energ\'ia para modelar las transiciones entre los posibles estados.
-	\item Realizar simulaciones que permitan modelar la respuesta del \emph{fitness} en relación a la frecuencia de cambio del medio.
+	\item Realizar simulaciones que permitan modelar la respuesta del \emph{fitness} en relaci\'on a la frecuencia de cambio del medio.
 \end{itemize}
 
 \section{Metodología}
 
-%Exponer DETALLADAMENTE la metodología que se usará en la Monografía. 
-
-%Monografía teórica o computacional: ¿Cómo se harán los cálculos teóricos? ¿Cómo se harán las simulaciones? ¿Qué requerimientos computacionales se necesitan? ¿Qué espacios físicos o virtuales se van a utilizar?
-
-%Monografía experimental: Recordar que para ser aprobada, los aparatos e insumos experimentales que se usarán en la Monografía deben estar previamente disponibles en la Universidad, o garantizar su disponibilidad para el tiempo en el que se realizará la misma. ¿Qué montajes experimentales se van a usar y que material se requiere? ¿En qué espacio físico se llevarán a cabo los experimentos? Si se usan aparatos externos, ¿qué permisos se necesitan? Si hay que realizar pagos a terceros, ¿cómo se financiará esto?
-
-El proyecto cuenta con una parte experimental y otra parte computacional. La parte experimental consiste en adaptar la cepa BY4741 de \emph{S. cerevisiae} a un ambiente que cambie con una frecuencia definida. Para lograr esto se incubar\'a dicha cepa por un mes con el turbidostato del laboratorio de biof\'isica de la Universidad. Luego se har\'an experimentos de competencia entre la cepa adaptada y la cepa original, usando genes de fluorescencia YFP y CFP para diferencialas. Con los resultados de las competencias se determinar\'a el coeficiente efectivo de selecci\'on \cite{Hegreness}. Este proceso se realizar\'a 2 veces para tener un resultado estad\'isticamente significativo. \\
+El proyecto cuenta con una parte experimental y otra parte computacional. La parte experimental consiste en adaptar la cepa BY4741 de \emph{S. cerevisiae} a un ambiente que cambie con una frecuencia definida. Para lograr esto se incubar\'a dicha cepa por un mes con el turbidostato del laboratorio de biof\'isica de la Universidad. Luego se realizar\'an experimentos de competencia entre la cepa adaptada y la cepa original, usando genes de fluorescencia YFP y CFP para diferencialas. Con los resultados de las competencias se determinar\'a el coeficiente efectivo de selecci\'on \cite{Hegreness}. Este proceso se realizar\'a 2 veces para obtener un resultado estad\'isticamente significativo. \\
 Para la parte computacional se requiere realizar un modelo simplificado teniendo en cuenta el circuito gen\'etico, luego con los datos de los experimentos se generar\'a el modelo te\'orico que permitir\'a realizar las simulaci\'ones \cite{Mettetal}.
 
 \section{Cronograma}
+\begin{itemize}
+	\item Tarea 1: Corridas de adaptaci\'on
+	\item Tarea 2: Experimentos de competencias
+	\item Tarea 3: An\'alisis de competencias
+	\item Tarea 4: Desarrollo del modelo te\'orico
+	\item Tarea 5: Simulaciones
+	\item Tarea 6: Escritura del documento
+\end{itemize}
 
 \begin{table}[htb]
 	\begin{tabular}{|c|cccccccccccccccc| }
@@ -82,30 +77,22 @@ Para la parte computacional se requiere realizar un modelo simplificado teniendo
 	1 & X & X & X & X &   & X & X & X & X &   &   &   &   &   &   &   \\
 	2 &   &   &   &   & X &   &   &   &   & X &   &   &   &  	 &   &   \\
 	3 &   &   &   &   &   & X & X &   &   &   & X & X &   &   &   &   \\
-	4 & X & X &   &   &   &   &   &   &   &   &   & X & X & X &   &   \\
-	5 &   &   &   &   &   &   &   &   &   &   &   &   & X & X & X & X \\
+	4 & X & X &   &   &   &   &   &   &   &   & X & X & X & X &   &   \\
+	5 &   &   &   &   &   &   &   &   &   &   &   &   & X & X & X &   \\
+	6 &   &   &   &   &   &   &   &   &   &   &   &   &   & X & X & X \\
 	\hline
 	\end{tabular}
 \end{table}
 \vspace{1mm}
 
-\begin{itemize}
-	\item Tarea 1: Corridas de adaptaci\'on
-	\item Tarea 2: Experimentos de competencias
-	\item Tarea 3: An\'alisis de competencias
-	\item Tarea 4: Desarrollo del modelo te\'orico
-	\item Tarea 5: Simulaciones
-\end{itemize}
 
 \section{Personas Conocedoras del Tema}
 
-%Nombres de por lo menos 3 profesores que conozcan del tema. Uno de ellos debe ser profesor de planta de la Universidad de los Andes.
-
 \begin{itemize}
-	\item Nombre de profesor 1 (Instituto o Universidad de afiliaci\'on 1)
-	\item Nombre de profesor 2 (Instituto o Universidad de afiliaci\'on 2)
-	\item Nombre de profesor 3 (Instituto o Universidad de afiliaci\'on 3)
-	\item ...
+	\item Juan Manuel Pedraza (Departamento de F\'isica, Universidad de los Andes, Colombia)
+	\item Alejandro Reyes Mu\~noz (Departamento de Ciencias Biol\'ogicas, Universidad de los Andes, Colombia)
+	\item Manu Forero Shelton (Departamento de F\'isica, Universidad de los Andes, Colombia)
+	\item Daniel Cadena Ordo\~nez (Departamento de Ciencias Biol\'ogicas, Universidad de los Andes, Colombia)
 \end{itemize}
 
 
@@ -114,6 +101,8 @@ Para la parte computacional se requiere realizar un modelo simplificado teniendo
 \bibitem {Avendano} M. Avenda\~no, C. Leidy, J.M. Pedraza. Nature communications \textbf{4}:2605, (2013).
 
 \bibitem {Murat} M. Acar, J.T. Mettetal, A. van Oudenaarden. Nature genetics \textbf{40}:4, 471-475, (2008).
+
+\bibitem {Kusell} E. Kusell \& S.Leibler. Science \textbf{309}:5743, 2075-2078 (2005)
 
 \bibitem {Acar} M. Acar, A. Becskei, A. van Oudenaarden. Nature \textbf{435}:7039, 228-232, (2005).
 
