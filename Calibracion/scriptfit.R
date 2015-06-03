@@ -30,7 +30,7 @@ par(mfrow=c(1,2))
 print("C1.2")
 xdata <- c1$Group.1
 ydata <- c1$Conteo
-fit <- nls(ydata ~ p1 + 2^(p2*xdata), start=list(p1=0.001, p2=0.001))
+fit <- nls(ydata ~ p1 * 2^(1/p2*xdata), start=list(p1=40.0, p2=75.0))
 print(summary (fit))
 plot(xdata,ydata, xlab="T", ylab="Cont")
 new = data.frame(xdata = seq(min(xdata),max(xdata),len=200))
@@ -38,7 +38,7 @@ lines(new$xdata,predict(fit,newdata=new))
 print("C2.2")
 xdata <- c2$Group.1
 ydata <- c2$Conteo
-fit <- nls(ydata ~ p1 + 2^(p2*xdata), start=list(p1=0.001, p2=0.001))
+fit <- nls(ydata ~ p1 * 2^(1/p2*xdata), start=list(p1=40.0, p2=75.0))
 print(summary (fit))
 plot(xdata,ydata, xlab="T", ylab="Cont")
 new = data.frame(xdata = seq(min(xdata),max(xdata),len=200))
@@ -51,7 +51,7 @@ par(mfrow=c(1,2))
 print("C1.3")
 xdata <- c1$Group.1
 ydata <- c1$Conteo
-fit <- nls(ydata ~ p1 + exp(p2*xdata), start=list(p1=0.001, p2=0.001))
+fit <- nls(ydata ~ p1 * exp(1/p2*xdata), start=list(p1=40.0, p2=75.0))
 print(summary (fit))
 plot(xdata,ydata, xlab="T", ylab="Cont")
 new = data.frame(xdata = seq(min(xdata),max(xdata),len=200))
@@ -59,7 +59,7 @@ lines(new$xdata,predict(fit,newdata=new))
 print("C2.3")
 xdata <- c2$Group.1
 ydata <- c2$Conteo
-fit <- nls(ydata ~ p1 + exp(p2*xdata), start=list(p1=0.001, p2=0.001))
+fit <- nls(ydata ~ p1 * exp(1/p2*xdata), start=list(p1=40.0, p2=75.0))
 print(summary (fit))
 plot(xdata,ydata, xlab="T", ylab="Cont")
 new = data.frame(xdata = seq(min(xdata),max(xdata),len=200))
