@@ -1,0 +1,37 @@
+---------------------------------------------------------------
+---------------------------------------------------------------
+C1
+
+Formula: ydata ~ p1 * exp(1/p2 * xdata)
+
+Parameters:
+    Estimate Std. Error t value Pr(>|t|)    
+p1 3.992e-02  2.750e-04   145.2   <2e-16 ***
+p2 2.574e+02  5.806e-01   443.3   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.01496 on 599 degrees of freedom
+
+Number of iterations to convergence: 14 
+Achieved convergence tolerance: 6.408e-07
+
+
+---------------------------------------------------------------
+C2
+
+Formula: ydata ~ p1 * exp(1/p2 * xdata)
+
+Parameters:
+    Estimate Std. Error t value Pr(>|t|)    
+p1 1.330e-01  1.037e-03   128.2   <2e-16 ***
+p2 3.235e+02  1.225e+00   264.1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03021 on 599 degrees of freedom
+
+Number of iterations to convergence: 13 
+Achieved convergence tolerance: 4.707e-07
+
+
