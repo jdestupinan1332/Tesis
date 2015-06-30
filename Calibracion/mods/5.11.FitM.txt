@@ -2,34 +2,37 @@
 ---------------------------------------------------------------
 C1
 
-Formula: ydata ~ p1 * exp(1/p2 * xdata)
+Formula: ydata ~ c + p1 * exp(1/p2 * xdata)
 
 Parameters:
     Estimate Std. Error t value Pr(>|t|)    
-p1 1.375e-01  5.360e-04  256.43   <2e-16 ***
-p2 5.494e+02  6.850e+00   80.22   <2e-16 ***
+c  1.252e-01  1.982e-03   63.18   <2e-16 ***
+p1 1.969e-02  1.569e-03   12.55   <2e-16 ***
+p2 1.571e+02  6.120e+00   25.66   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.004961 on 264 degrees of freedom
+Residual standard error: 0.00322 on 263 degrees of freedom
 
-Number of iterations to convergence: 10 
-Achieved convergence tolerance: 1.451e-06
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.293e-06
 
 ---------------------------------------------------------------
 C2
 
-Formula: ydata ~ p1 * exp(1/p2 * xdata)
+Formula: ydata ~ c + p1 * exp(1/p2 * xdata)
 
 Parameters:
     Estimate Std. Error t value Pr(>|t|)    
-p1 4.028e-01  1.656e-03  243.15   <2e-16 ***
-p2 5.920e+02  8.445e+00   70.09   <2e-16 ***
+c  3.894e-01  3.808e-03  102.25   <2e-16 ***
+p1 3.769e-02  2.768e-03   13.61   <2e-16 ***
+p2 1.341e+02  4.362e+00   30.74   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.01518 on 264 degrees of freedom
+Residual standard error: 0.00826 on 263 degrees of freedom
 
-Number of iterations to convergence: 9 
-Achieved convergence tolerance: 5.242e-06
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 7.692e-07
+
 
