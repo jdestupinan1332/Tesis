@@ -4,7 +4,7 @@ dat <- read.table(args[1])
 print("C1")
 xdata <- dat$V1
 ydata <- dat$V2
-fit <- nls(ydata ~ p1 * exp(1/p2*xdata), start=list(p1=0.100, p2=75.0))
+fit <- nls(ydata ~ c + p1 * exp(1/p2*xdata), start=list(c=0.1, p1=0.100, p2=75.0))
 print(summary(fit))
 
 
@@ -19,12 +19,13 @@ lines(new$xdata,predict(fit,newdata=new), col=2)
 print("C2")
 xdata <- dat$V1
 ydata <- dat$V3
-fit <- nls(ydata ~ p1 * exp(1/p2*xdata), start=list(p1=0.100, p2=75.0))
+fit <- nls(ydata ~ c + p1 * exp(1/p2*xdata), start=list(c=1.0, p1=0.100, p2=75.0))
 print(summary(fit))
 
-plot(xdata, ydata, ylab="V", xlab="tiempo(min)", main="C2", type="l")
+plot(xdata, ydata, ylab="V", xlab="tiempo(min)", main="C3", type="l")
 new = data.frame(xdata = seq(min(xdata),max(xdata),len=200))
 lines(new$xdata,predict(fit,newdata=new), col=2)
+
 
 dev.off()
 
