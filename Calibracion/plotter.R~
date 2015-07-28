@@ -1,0 +1,14 @@
+args <- commandArgs(T)
+
+dat <- read.table(args[1])
+print(args[1])
+
+filen <- gsub(".txt", ".png", args[1])
+png(filen, width=672*2, height=672*2, units="px")
+par(mfrow=c(2,2))
+plot(dat$V1/60,dat$V2, type="l", main="C1", xlab="h", ylab="V")
+plot(dat$V1/60,dat$V3, type="l", main="C2", xlab="h", ylab="V")
+plot(dat$V1/60,dat$V4, type="l", main="C3", xlab="h", ylab="V")
+plot(dat$V1/60,dat$V5, type="l", main="C4", xlab="h", ylab="V")
+
+dev.off()
