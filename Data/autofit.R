@@ -54,3 +54,6 @@ print(mean(allfits))
 
 means <- c(means, mean(allfits))
 std <- c(std, sd(allfits))
+
+arrows(seq(1:12), glu$means-glu$std, seq(1:12), glu$means+glu$std, length=0.05, angle=90, code=3, col=3)
+arrows(seq(1:12), glu$means-glu$std, seq(1:12), glu$means+glu$std, length=0.05, angle=90, code=3, col=2)
