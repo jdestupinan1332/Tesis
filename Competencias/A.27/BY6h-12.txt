@@ -1,7 +1,0 @@
-"Ch" "Azucar" "means"
-1 "Glucosa" 113.489476293687
-1 "Galactosa" 117.768118907817
-2 "Glucosa" 169.818560594966
-2 "Galactosa" 217.510096014366
-3 "Glucosa" 124.496551489245
-3 "Galactosa" 136.374263973142
